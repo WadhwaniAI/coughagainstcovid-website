@@ -14,20 +14,20 @@
     <!-- <base href="/"> -->
 
         <!--FACEBOOK-->
-    <meta property="og:image" content="https://jonbarron.info/mipnerf/img/rays_square.png">
+    <!-- <meta property="og:image" content="https://jonbarron.info/mipnerf/img/rays_square.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="682">
     <meta property="og:image:height" content="682">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jonbarron.info/mipnerf/"/>
     <meta property="og:title" content="mip-NeRF" />
-    <meta property="og:description" content="Project page for Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields." />
+    <meta property="og:description" content="Project page for Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields." /> -->
 
         <!--TWITTER-->
-    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="mip-NeRF" />
     <meta name="twitter:description" content="Project page for Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields." />
-    <meta name="twitter:image" content="https://jonbarron.info/mipnerf/img/rays_square.png" />
+    <meta name="twitter:image" content="https://jonbarron.info/mipnerf/img/rays_square.png" /> -->
 
 
 <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
@@ -53,9 +53,9 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>Mip-NeRF</b>: A Multiscale Representation <br> for Anti-Aliasing Neural Radiance Fields</br> 
+                Impact of data-splits on generalization : <br> Identifying COVID-19 from cough and context </br> 
                 <small>
-                    arXiv 2021
+                     ICLR 2021 : AI for Public Health Workshop
                 </small>
             </h2>
         </div>
@@ -63,51 +63,41 @@
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://jonbarron.info/">
-                          Jonathan T. Barron
-                        </a>
-                        </br>Google
+                          Makkunda Sharma<sup>*</sup>
+                        </br>Wadhwani AI
                     </li>
                     <li>
-                        <a href="http://bmild.github.io/">
-                            Ben Mildenhall
-                        </a>
-                        </br>Google
+                          Nikhil Shenoy<sup>*</sup>
+                        </br>Wadhwani AI
                     </li>
                     <li>
-                        <a href="http://matthewtancik.com/">
-                          Matthew Tancik
-                        </a>
-                        </br>UC Berkeley
+                          Jigar Doshi<sup>*</sup>
+                        </br>Wadhwani AI
                     </li><br>
                     <li>
-                        <a href="https://phogzone.com/">
-                          Peter Hedman
-                        </a>
-                        </br>Google
+                          Piyush Bagad<sup>*</sup>
+                        </br>Wadhwani AI
                     </li>
                     <li>
-                        <a href="http://www.ricardomartinbrualla.com/">
-                          Ricardo Martin-Brualla
-                        </a>
-                        </br>Google
+                          Aman Dalmia
+                        </br>Wadhwani AI
                     </li>
                     <li>
-                        <a href="https://pratulsrinivasan.github.io/">
-                          Pratul P. Srinivasan
-                        </a>
-                        </br>Google
+                          Rahul Panicker
+                        </br>Wadhwani AI
+                    </li><br>
+                    <li>
+                    	<sup>*</sup> Equal Contribution
                     </li>
                 </ul>
             </div>
         </div>
 
-
         <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="https://arxiv.org/abs/2103.13415">
+                            <a href="https://arxiv.org/abs/2009.08790">
                             <image src="img/mip_paper_image.jpg" height="60px">
                                 <h4><strong>Paper</strong></h4>
                             </a>
@@ -118,12 +108,12 @@
                                 <h4><strong>Video</strong></h4>
                             </a>
                         </li>
-                        <!-- <li>
-                            <a href="https://github.com/">
+                        <li>
+                            <a href="https://github.com/WadhwaniAI/cough-against-covid">
                             <image src="img/github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
                             </a>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
         </div>
@@ -135,11 +125,9 @@
                 <h3>
                     Abstract
                 </h3>
-                <image src="img/rays.png" class="img-responsive" alt="overview"><br>
+                <image src="img/teaser-v6.pdf" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
-The rendering procedure used by neural radiance fields (NeRF) samples a scene with a single ray per pixel and may therefore produce renderings that are excessively blurred or aliased when training or testing images observe scene content at different resolutions. The straightforward solution of supersampling by rendering with multiple rays per pixel is impractical for NeRF, because rendering each ray requires querying a multilayer perceptron hundreds of times. Our solution, which we call "mip-NeRF" (à la "mipmap"), extends NeRF to represent the scene at a continuously-valued scale.
-By efficiently rendering anti-aliased conical frustums instead of rays, mip-NeRF reduces objectionable aliasing artifacts and significantly improves NeRF's ability to represent fine details, while also being 7% faster than NeRF and half the size.
-Compared to NeRF, mip-NeRF reduces average error rates by 16% on the dataset presented with NeRF and by 60% on a challenging multiscale variant of that dataset that we present. mip-NeRF is also able to match the accuracy of a brute-force supersampled NeRF on our multiscale dataset while being 22x faster.
+Rapidly scaling screening,  testing and quarantine has shown to be an effectivestrategy to combat the COVID-19 pandemic. We consider the application of deep learning techniques to distinguish individuals with COVID from non-COVID byusing data acquireable from a phone.  Using cough and context (symptoms andmeta-data) represent such a promising approach.  Several independent works inthis direction have shown promising results. However, none of them report perfor-mance across clinically relevant data-splits.  Specifically, the performance where the development and test sets are split in time (retrospective validation) and across sites (broad validation). Although there is meaningful generalization across these splits the performance significantly varies (up to 0.1 AUC score). In addition, we study the performance on symptomatic and asymptomatic individualsacross these three splits.  Finally, we show that our model focuses on meaningful features of the input, ‘cough’ bouts for cough and relevant symptoms for context.
                 </p>
             </div>
         </div>
@@ -163,23 +151,19 @@ Compared to NeRF, mip-NeRF reduces average error rates by 16% on the dataset pre
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Integrated Positional Encoding
+                    Our Proposed Solution
                 </h3>
-                <p class="text-justify">
-                    Typical positional encoding (as used in Transformer networks and Neural Radiance Fields) maps a single point in space to a feature vector, where each element is generated by a sinusoid with an exponentially increasing frequency:
-                </p>
                 <p style="text-align:center;">
-                    <image src="img/pe_seq_eqn_pad.png" height="50px" class="img-responsive">
+                    <image src="img/arch_v4.pdf" height="50px" class="img-responsive">
                 </p>
-                <video id="v0" width="100%" autoplay loop muted>
-                  <source src="img/pe_anim_horiz.mp4" type="video/mp4" />
-                </video>
                 <p class="text-justify">
-                    Here, we show how these feature vectors change as a function of a point moving in 1D space.
-                    <br><br>
-                    Our <em>integrated positional encoding</em> considers Gaussian <em>regions</em> of space, rather than infinitesimal points. This provides a natural way to input a "region" of space as query to a coordinate-based neural network, allowing the network to reason about sampling and aliasing. The expected value of each positional encoding component has a simple closed form:
+                    We develop a CNN-based framework that ingests spectrogram representations of audio and directly predicts the probability of the presence of COVID-19.
+                    <br>
+                     For our context-based classification task, we leverage TabNet as our classifier. 
+                     <br>
+                     For every individual, we get predicted probabilities p(y= 1|xcough) and p(y=1|xcontext) from the individual classifiers. For our final prediction we use a simple  ensembling scheme that averages the predictions from the two classifiers.
                 </p>
-                <p style="text-align:center;">
+                <!-- <p style="text-align:center;">
                     <image src="img/ipe_eqn_under_pad.png" height="30px" class="img-responsive">
                 </p>
                 <video id="v0" width="100%" autoplay loop muted>
@@ -187,6 +171,37 @@ Compared to NeRF, mip-NeRF reduces average error rates by 16% on the dataset pre
                 </video>
                 <p class="text-justify">
                     We can see that when considering a wider region, the higher frequency features automatically shrink toward zero, providing the network with lower-frequency inputs. As the region narrows, these features converge to the original positional encoding.
+                </p> -->
+            </div>
+        </div>
+            
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Our Data
+                </h3>
+                <p class="text-justify">
+                    We collect this dataset from individuals who have undergone a COVID-19 test, from numerous testing sites across the country. In addition, contextual data such as symptoms,travel history, contact with confirmed case and demographic information etc is collected .  Unlike crowd-sourced datasets that rely on self-reported COVID-19 status, our ground-truth is lab test results from the healthcarefacilities.  This dataset consists of 12,780 cough sounds from 4,260 individuals from 27 differentsites. 1,394 have a positive test result and 2866 remaining are tested negatives.
+                </p>
+                <h4>
+                	Our Data Statistics
+                </h4>
+                <p style="text-align:center;">
+                    <image src="img/combined_demographics_v3.pdf" class="img-responsive" alt="scales">
+                </p>
+                <h4>
+                	Our Data Splitting Strategy
+                </h4>
+                <p class="text-justify">
+                    In order to establish robustness towards deployment of our model,  we use 3 different strategies for splitting the data.   All samples of an individual are always part of the same set .The details on the data distribution across the splits are shown in the figure above .
+                </p>
+                <p style="text-align:center;">
+                    <image src="img/data_slicing_grid_v3.pdf" class="img-responsive" alt="scales">
+                </p>
+                <p style="text-align:center;">
+                    <image src="img/data-dist-v2.pdf" class="img-responsive" alt="scales">
                 </p>
             </div>
         </div>
@@ -196,21 +211,29 @@ Compared to NeRF, mip-NeRF reduces average error rates by 16% on the dataset pre
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Mip-NeRF
+                    Data Visualization
                 </h3>
                 <p class="text-justify">
-                    We use integrated positional encoding to train NeRF to generate anti-aliased renderings. Rather than casting an infinitesimal ray through each pixel, we instead cast a full 3D <em>cone</em>. For each queried point along a ray, we consider its associated 3D conical frustum. Two different cameras viewing the same point in space may result in vastly different conical frustums, as illustrated here in 2D:
+                    Given the clinical uncertainty of this task and the use of deep learning for it, it is essential for clinicians to qualitatively understand the model behaviour and its predictions.  As a sanity check, we employ GradCAM++ to compute these saliency map.  We consistently observe that the focus-areas are on and around the cough bouts.  This reinforces the belief that the model is indeed making predictions based on coughsignal and otherwise.
+                    <br>
+                    For the context-based classifier, we use Local Interpretable Model-agnostic Explanations (LIME) to understand which specific features help the model differentiate between COVID+ and COVID- patients at an instance level.  
+                </p>                
+                <br>
+                <p style="text-align:center;">
+                    <image src="img/gradcam-random-1911.pdf" height="50px" class="img-responsive">
                 </p>
                 <p style="text-align:center;">
-                    <image src="img/scales_toy.png" class="img-responsive" alt="scales">
+                    <image src="img/gradcam-random-3581.pdf" height="50px" class="img-responsive">
                 </p>
-                <p class="text-justify">
-                    In order to pass this information through the NeRF network, we fit a multivariate Gaussian to the conical frustum and use the integrated positional encoding described above to create the input feature vector to the network. 
+                <p style="text-align:center;">
+                    <image src="img/gradcam-random-2263.pdf" height="50px" class="img-responsive">
                 </p>
+                <p style="text-align:center;">
+                    <image src="img/gradcam-random-1217.pdf" height="50px" class="img-responsive">
+                </p>
+                <br><br>
             </div>
         </div>
-            
-
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -221,25 +244,10 @@ Compared to NeRF, mip-NeRF reduces average error rates by 16% on the dataset pre
                     We train NeRF and mip-NeRF on a dataset with images at four different resolutions. Normal NeRF (left) is not capable of learning to represent the same scene at multiple levels of detail, with blurring in close-up shots and aliasing in low resolution views, while mip-NeRF (right) both preserves sharp details in close-ups and correctly renders the zoomed-out images.
                 </p>                
                 <br>
-                <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="img/ship_sbs_path1.mp4" type="video/mp4" />
-                </video>
-                <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="img/chair_sbs_path1.mp4" type="video/mp4" />
-                </video>
-                <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="img/lego_sbs_path1.mp4" type="video/mp4" />
-                </video>
-                <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="img/mic_sbs_path1.mp4" type="video/mp4" />
-                </video>
                 <br><br>
                 <p class="text-justify">
                     We can also manipulate the integrated positional encoding by using a larger or smaller radius than the true pixel footprint, exposing the continuous level of detail learned within a single network:
                 </p>     
-                <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="img/lego_radii_manip_slider_200p.mp4" type="video/mp4" />
-                </video>
             </div>
         </div>
 
@@ -247,25 +255,25 @@ Compared to NeRF, mip-NeRF reduces average error rates by 16% on the dataset pre
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Related links
+                    How to access Data
                 </h3>
+                To access the data , download the files given below with the relevant splits . Contact us at <a href= "mailto:coughagainstcovid@wadhwaniai.org"> coughagainstcovid@wadhwaniai.org </a> for the password .
+                <br>
+                <br>
                 <p class="text-justify">
-                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Wikipedia</a> provides an excellent introduction to spatial anti-aliasing techniques.
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Spectrogram : </a> This contains the spectrograms of the the audio data present . 
                 </p>
                 <p class="text-justify">
-                    Mipmaps were introduced by Lance Williams in his paper "Pyramidal Parametrics" (<a href="https://software.intel.com/sites/default/files/m/7/2/c/p1-williams.pdf">Williams (1983)</a>).
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Wav2vec : </a> This contains data passed through wav2vec2 .
                 </p>
                 <p class="text-justify">
-                    <a href="https://dl.acm.org/doi/abs/10.1145/964965.808589">Amanatides (1984)</a> first proposed the idea of replacing rays with cones in computer graphics rendering. 
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">VGGish : </a> This contains data passed through VGGish .
                 </p>
                 <p class="text-justify">
-                    The closely related concept of <em>ray differentials</em> (<a href="https://graphics.stanford.edu/papers/trd/">Igehy (1999)</a>) is used in most modern renderers to antialias textures and other material buffers during ray tracing.
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">OpenSMIL : </a> This contains data features passed through openSMIL .
                 </p>
                 <p class="text-justify">
-                    Cone tracing has been used along with prefiltered voxel-based representations of scene geometry for speeding up indirect illumination calculations in <a href="https://research.nvidia.com/sites/default/files/publications/GIVoxels-pg2011-authors.pdf">Crassin et al. (2011)</a>.
-                </p>
-                <p class="text-justify">
-                    Mip-NeRF was implemented on top of the <a href="https://github.com/google-research/google-research/tree/master/jaxnerf">JAXNeRF</a> codebase.
+                    <a href="https://en.wikipedia.org/wiki/Spatial_anti-aliasing">Resnet : </a> This contains output when the spectrogram is passed through our trained resnet 18 model .
                 </p>
             </div>
         </div>
@@ -278,15 +286,15 @@ Compared to NeRF, mip-NeRF reduces average error rates by 16% on the dataset pre
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
-@article{barron2021mipnerf,
-    title={Mip-NeRF: A Multiscale Representation 
-           for Anti-Aliasing Neural Radiance Fields},
-    author={Jonathan T. Barron and Ben Mildenhall and 
-            Matthew Tancik and Peter Hedman and 
-            Ricardo Martin-Brualla and Pratul P. Srinivasan},
-    journal={arXiv},
-    year={2021}
-}</textarea>
+@misc{bagad2020cough,
+      title={Cough Against COVID: Evidence of COVID-19 Signature in Cough Sounds}, 
+      author={Piyush Bagad and Aman Dalmia and Jigar Doshi and Arsha Nagrani and Parag Bhamare and Amrita Mahale and Saurabh Rane and Neeraj Agarwal and Rahul Panicker},
+      year={2020},
+      eprint={2009.08790},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD}
+}
+</textarea>
                 </div>
             </div>
         </div>
@@ -297,11 +305,21 @@ Compared to NeRF, mip-NeRF reduces average error rates by 16% on the dataset pre
                     Acknowledgements
                 </h3>
                 <p class="text-justify">
-                We thank Janne Kontkanen and David Salesin for their comments on the text, Paul Debevec for constructive discussions, and Boyang Deng for JaxNeRF. 
+                We are thankful to AWS for covering the entire cost of the GPUs used for this work .
                     <br>
-                MT is funded by an NSF Graduate Fellowship.
+                 We also thank James Zhou (Stanford), and Peter Small) and Puneet Dewan (Global Health  Labs) for very helpful discussions, inputs, and evangelism. We are grateful to Ankit Baghel, Anoop Manjunath and Arda Sahiner from Stanford for helping with curating the cough pre-training dataset .
                     <br>
-                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                    We also want to thank the Governments of Bihar and Odisha, and the Municipal Corporation of Greater Mumbai for extending necessary approvals and facilitating activities for data collection in respective geographies.
+                    <br>
+                    We are grateful to Ashfaq Bhat and his team at Norway India Partnership Initiative for supporting data collection and advocacy efforts in the state of Bihar and Odisha. Ravikant Singh and his team at Doctors for You for playing a critical role in initiating data collection, getting IRB approvals and managing field operations. Pankaj Bhardwaj and Suman Saurabh from Department of Community Medicine in All India Institute of Medical sciences, Jodhpur for leading the data collection efforts in the institute.
+                    <br>
+                    We greatly appreciate the support of our lovely team members at Wadhwani AI. Nikhil Velpanur played a key role helping early data collection, supported by Akshita Bhanjdeo and Patanjali Pahwa. Puskar Pandey has been helping ensure continued data collection. Bhavin Vadera provided important support for data collection in additional sites. Vishal Agarwal helped build essential digital tools for data collection. Kalyani Shastry managed the entire logistics and coordinated supplies needed for field data collection at various study sites.
+                    <br>
+                    And finally, we are humbled by the passion, hard work, and dedication of our numerous field staff. They have ensured strict adherence of the safety protocols through the data collection effort while maintaining high data quality.
+                    <br>
+                    <br>
+                    <br>
+                The website template was borrowed from <a href="https://jonbarron.info/mipnerf/">Jon Barron</a> who took it from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
                 </p>
             </div>
         </div>
